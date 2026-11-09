@@ -1,0 +1,2 @@
+# ScreenshotViewerShare
+简单轻量化的Screenshot viewer与ChatImage联动模组
