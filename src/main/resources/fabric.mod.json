@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "screenshot_viewer_share",
+  "version": "${version}",
+  "name": "Screenshot Viewer Share",
+  "description": "Adds a 'Share to Chat' button to Screenshot Viewer's screenshot properties menu and prefills a ChatImage send command.",
+  "authors": [
+    "Nova-Committee"
+  ],
+  "contact": {
+    "homepage": "https://github.com/LGatodu47/ScreenshotViewer",
+    "sources": "https://github.com/Nova-Committee/ScreenshotSharing"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.novacommittee.screenshotviewershare.ScreenshotViewerShareClient"
+    ]
+  },
+  "mixins": [
+    "screenshot_viewer_share.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": ">=26.2",
+    "java": ">=25",
+    "screenshot_viewer": "*",
+    "chatimage": "*"
+  },
+  "recommends": {
+    "screenshot_sharing": "*"
+  }
+}
